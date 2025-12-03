@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oppenheimer - Biopremiär 2023</title>
+    <link rel="stylesheet" href="./styles/style.css" id="stylesheet">
 </head>
 <body>
+     <button id="toggleBtn" onclick="toggleCSS()">Toggle Style</button>
+
     <header>
         <h1>OPPENHEIMER</h1>
         <img src="./images/logo.png" width="200" height="50" alt="Oppenheimer filmlogotyp">
-        <link rel="stylesheet" href="./styles/style.css" id="stylesheet">
     </header>
 
     <main>
@@ -41,5 +43,16 @@
         <p>Webmaster: Amjad Natouf</p>
         <p>Detta uppdrag kommer från Filmbolaget FS</p>
     </footer>
+
+    <script>
+        function toggleCSS() {
+            const stylesheet = document.getElementById('stylesheet');
+            if (stylesheet.disabled) {
+                stylesheet.disabled = false;
+            } else {
+                stylesheet.disabled = true;
+            }
+        }
+    </script>
 </body>
 </html>
